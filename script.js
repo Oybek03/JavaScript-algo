@@ -279,27 +279,97 @@
 
 // so'zni  top
 
-let s = "qwertyuiopasdfghjklzxcvbnm";
-let str = prompt("ss");
+// let s = "qwertyuiopasdfghjklzxcvbnm";
+// let str = prompt("ss");
 
-let arr = s.toLowerCase();
-let new10 = [];
-let index = -8;
+// let arr = s.toLowerCase();
+// let new10 = [];
+// let index = -8;
 
-for (let i = 0; i < str.length; i++) {
-  for (let j = 0; j < arr.length; j++) {
-    if (str[i] == arr[j]) {
-      if (index < j) {
-        index = j;
-        new10.push(arr[j]);
-        break;
-      }
-    }
-  }
+// for (let i = 0; i < str.length; i++) {
+//   for (let j = 0; j < arr.length; j++) {
+//     if (str[i] == arr[j]) {
+//       if (index < j) {
+//         index = j;
+//         new10.push(arr[j]);
+//         break;
+//       }
+//     }
+//   }
+// }
+// if (new10.length == str.length) {
+//   console.log(`topdim`);
+// } else {
+//   console.log(`topolmadim`);
+// }
+// console.log(new10);
+
+// let x = "umid".split("");
+// let a = ["umid", "ulug", "oybek", "jamil", "amam"];
+// console.log(x.sort(), a.sort());
+// let uu = "u1id";
+// let oo = uu.charCodeAt(1);
+// console.log(oo);
+// console.log(x);
+
+// for (let i = 0; i < x.length; i++) {
+//   if (x[i].charCodeAt(i) > x[i + 1].charCodeAt(i)) {
+//     [x[i], x[i + 1]] = [x[i + 1], x[i]];
+//     // console.log(x[i].replice(x[i], x[i + 1]));
+//   }
+// }
+// let summ = 2436655;
+// let numm = [12, 22, 252, 78, 11111];
+// console.log(numm.sort());
+// console.log(summ.sort());
+
+// let xas = String.fromCharCode(55);
+// console.log(xas);
+
+// let son = numm.sort((a, b) => {
+//   if (a > b) return 1;
+//   else return -1;
+// });
+// console.log(son);
+// let son1 = numm.sort((a, b) => {
+//   if (a < b) return 1;
+//   else return -1;
+// });
+// console.log(son1);
+
+//1 - MASALA
+
+// for (let belgi = "*"; belgi.length < 8; belgi = belgi + "*") {
+//   console.log(belgi);
+// }
+
+// // 2 - MASALA
+// let natija = "";
+// let line1 = " * * * * * * * *";
+// let line2 = "* * * * * * * *";
+
+// for (let i = 0; i < 8; i++) {
+//   if (i % 2 == 0) {
+//     natija = natija + line1 + "\n";
+//   } else {
+//     natija = natija + line2 + "\n";
+//   }
+// }
+// console.log(natija);
+
+//if20;
+let A = Number(prompt("A ni kirit"));
+let B = Number(prompt("B ni kirit"));
+let C = Number(prompt("C ni kirit"));
+
+if (Math.abs(A - B) < Math.abs(A - C)) {
+  console.log(
+    `A nuqtaga eng yaqin nuqta: ${B}, va uning uzinligi: ${Math.abs(A - B)}`
+  );
+} else if (Math.abs(A - C) < Math.abs(A - B)) {
+  console.log(
+    `A nuqtaga eng yaqin nuqta: ${Math.abs(C)}, va uning uzinligi: ${Math.abs(
+      A - C
+    )}`
+  );
 }
-if (new10.length == str.length) {
-  console.log(`topdim`);
-} else {
-  console.log(`topolmadim`);
-}
-console.log(new10);
