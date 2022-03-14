@@ -358,18 +358,43 @@
 // console.log(natija);
 
 //if20;
-let A = Number(prompt("A ni kirit"));
-let B = Number(prompt("B ni kirit"));
-let C = Number(prompt("C ni kirit"));
+// let A = Number(prompt("A ni kirit"));
+// let B = Number(prompt("B ni kirit"));
+// let C = Number(prompt("C ni kirit"));
 
-if (Math.abs(A - B) < Math.abs(A - C)) {
-  console.log(
-    `A nuqtaga eng yaqin nuqta: ${B}, va uning uzinligi: ${Math.abs(A - B)}`
-  );
-} else if (Math.abs(A - C) < Math.abs(A - B)) {
-  console.log(
-    `A nuqtaga eng yaqin nuqta: ${Math.abs(C)}, va uning uzinligi: ${Math.abs(
-      A - C
-    )}`
-  );
+// if (Math.abs(A - B) < Math.abs(A - C)) {
+//   console.log(
+//     `A nuqtaga eng yaqin nuqta: ${B}, va uning uzinligi: ${Math.abs(A - B)}`
+//   );
+// } else if (Math.abs(A - C) < Math.abs(A - B)) {
+//   console.log(
+//     `A nuqtaga eng yaqin nuqta: ${Math.abs(C)}, va uning uzinligi: ${Math.abs(
+//       A - C
+//     )}`
+//   );
+// }
+
+//if 23
+// let X = Number(prompt("x ning qiymatini kiritig"));
+// let Y = Number(prompt("y ning qiymatini kiriting"));
+
+// if (X > 0 && Y > 0) {
+//   console.log("birinchi chorakda yotadi");
+// } else if (X > 0 && Y < 0) {
+//   console.log("turtinchi  chorakda yotadi");
+// } else if (X < 0 && Y < 0) {
+//   console.log("uchinch chorakda yotadi");
+// } else if (X < 0 && Y > 0) {
+//   console.log("ikkinchi chorakda yotadi");
+// } else {
+//   console.log("o'qlar ustida yotdi");
+// }
+
+//if 28
+
+let yil = Number(prompt("yilni kiriting"));
+if (yil % 4 == 0 && yil % 400 == 0) {
+  alert("bu yilda 366 kun bor ");
+} else {
+  alert("bu yilda 365 kun bor");
 }
